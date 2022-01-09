@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace First.NetProjet
+{
+    class Program
+    {
+
+        int a = 3; //Instance Variable 
+        string b; // Instance Variable
+
+        static int x = 10;  // static variable 
+
+        static void Main(string[] args)
+        {
+            //write entername
+            Console.WriteLine("The Instance variable value is:");
+
+            Program p1 = new Program(); //Instance variable assign in other method/function
+
+            Console.WriteLine(" This is the instance variable value:" + p1.a);
+
+            Console.WriteLine("This is the static variable value:" + Program.x); // program.x this is static varaible
+
+            
+            //write whole name of user given
+            //Console.WriteLine("Your Name:" + num1 + " " + num2);
+
+            Console.Read();
+              
+        }
+    }
+}
