@@ -1,0 +1,34 @@
+//Write and Read String from user
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace First.NetProjet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //write entername
+            Console.WriteLine("Enter Your Name:");
+
+            //read name from user
+            string fname = Console.ReadLine();
+
+            //write entersuraname
+            Console.WriteLine("Enter Your Surname:");
+
+            //read surname from user
+            string lname = Console.ReadLine();
+
+            //write whole name of user given
+            Console.WriteLine("Your Name:" + fname + " " + lname);
+
+            Console.Read();
+              
+        }
+    }
+}
