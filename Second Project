@@ -1,0 +1,43 @@
+//Addition of Numbers using
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace First.NetProjet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //write entername
+            Console.WriteLine("Enter First Number:");
+
+            //read name from user
+            string num1 = Console.ReadLine();
+
+            //write entersuraname
+            Console.WriteLine("Enter Second Naumber:");
+
+            //read surname from user
+            string num2 = Console.ReadLine();
+
+
+            Double numa1 = Convert.ToDouble(num1);
+
+            Double numa2 = Convert.ToDouble(num2);
+
+            Double sum = numa1 + numa2;
+
+            Console.WriteLine("Your Answer is: " + sum);
+
+            //write whole name of user given
+            //Console.WriteLine("Your Name:" + num1 + " " + num2);
+
+            Console.Read();
+              
+        }
+    }
+}
