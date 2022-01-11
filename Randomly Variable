@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp
+{
+    class Program
+    {
+        int x = 10;
+        string fname="";
+        readonly int v2 = 15; // Randomly Variable
+
+        static string s = "Sagar Chougule"; //Static Variable
+
+        static void Main(string[] args)
+        {
+            Console.Write("I got to work" + "\n");
+            int a = 340;
+
+            Program p1 = new Program();
+            Console.WriteLine("local variable :" + a);
+            Console.WriteLine("Instance Variable :" + p1.x);  // instance variable
+
+            Console.WriteLine("Static Variable:" + Program.s);  // Static Varaible
+
+            Console.WriteLine("Randomly Variable :" + p1.v2);  // randomly Variable
+            Console.Read();
+        }
+    }
+}
