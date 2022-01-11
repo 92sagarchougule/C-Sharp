@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp
+{
+    class Program
+    {
+
+       
+        int x = 10;    // instance Variable
+        string fname="";  // instance Variable
+
+
+        static void Main(string[] args)
+        {
+
+            int a = 20; // Class Variable
+
+            Console.WriteLine("Local Variable:" + a);
+
+            Program p1 = new Program();  // Created object
+
+            Console.WriteLine("This is the Static Variable:" + p1.x);
+
+            Console.ReadLine();
+
+            
+        }
+    }
+}
