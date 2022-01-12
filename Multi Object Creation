@@ -1,0 +1,76 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp
+{
+    class Program  // Class
+    {
+        string fname = "Sagar"; // Instance Variable
+        string lname = "Chougule";  // Instance Variable
+        int rollname = 12;  // Instance Variable
+
+        static void Main(string[] args)
+        {
+
+            Program a1 = new Program(); // object 1   Object creation 
+
+            a1.fname = "Suresh";  // Variable
+            a1.lname = "Lamani";
+            a1.rollname = 14;
+
+            Console.WriteLine("object 1");
+            Console.WriteLine("Instance Variable :" + a1.fname);
+            Console.WriteLine("Instance Variable :" + a1.lname);
+            Console.WriteLine("Instance Variable :" + a1.rollname);
+
+            Console.WriteLine("\n\n");
+
+            Program a2 = new Program(); // object 2
+
+            a2.fname = "Goutam";
+            a2.lname = "Chanu";
+            a2.rollname = 1;
+            Console.WriteLine("object 2");
+            Console.WriteLine("Instance Variable :" + a2.fname);
+            Console.WriteLine("Instance Variable :" + a2.lname);
+            Console.WriteLine("Instance Variable :" + a2.rollname);
+            Console.WriteLine("\n\n");
+
+            Program a3 = new Program(); // object 3
+            a3.fname = "Ram";
+            a3.lname = "Angadi";
+            a3.rollname = 4;
+            Console.WriteLine("object 3");
+            Console.WriteLine("Instance Variable :" + a3.fname);
+            Console.WriteLine("Instance Variable :" + a3.lname);
+            Console.WriteLine("Instance Variable :" + a3.rollname);
+            Console.WriteLine("\n\n");
+
+            Program a4 = new Program(); // object 4
+            a4.fname = "Abhishek";
+            a4.lname = "Bhalare";
+            a4.rollname = 1;
+            Console.WriteLine("object 4");
+            Console.WriteLine("Instance Variable :" + a4.fname);
+            Console.WriteLine("Instance Variable :" + a4.lname);
+            Console.WriteLine("Instance Variable :" + a4.rollname);
+            Console.WriteLine("\n\n");
+
+            Program a5 = new Program(); // object 5
+            a5.fname = "Ravi";
+            a5.lname = "Jadi";
+            a5.rollname = 18;
+            Console.WriteLine("object 5");
+            Console.WriteLine("Instance Variable :" + a5.fname);
+            Console.WriteLine("Instance Variable :" + a5.lname);
+            Console.WriteLine("Instance Variable :" + a5.rollname);
+            Console.WriteLine("\n\n");
+
+
+            Console.ReadLine();
+        }
+    }
+}
