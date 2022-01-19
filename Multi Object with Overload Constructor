@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        string fname = "Sagar";     // Instence Variables
+        string lname = "Chougule";  // Instence Variables
+        int rollnum = 4;            // Instence Variables
+
+
+        public Program() //Cunstructor Class    //name and Function name is same // Program or Variable name we call as Identify
+        {
+            //Instance variable constructor
+        }
+
+
+        public Program(string fnames, string lnames, int rollnums)  // Constructor Overload    // More than one constructor
+        {
+            fname = fnames;
+            lname = lnames;
+            rollnum = rollnums;
+        }
+
+        static void Main(string[] args)   // Function or Method
+        {
+            Program n1 = new Program("Jayu","Sargar",40);    //Object
+            Program n2 = new Program("Raj", "Sargar", 90);
+
+
+            Console.WriteLine("Object one is" + " " + n1.fname +" "+ n1.lname + " " + n1.rollnum);
+            Console.WriteLine("Object two is" + " " + n2.fname + " " + n2.lname + " " + n2.rollnum);
+
+            Console.ReadLine();
+
+        }
+    }
+}
