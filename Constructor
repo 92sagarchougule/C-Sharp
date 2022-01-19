@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        int a = 200;
+        string ks ;
+
+
+        public Program()//Construcutor
+            {
+            Console.WriteLine("Console starts here:");
+
+            }
+        static void Main(string[] args)
+        {
+            Program p1 = new Program();
+            p1.a = 100;
+            p1.ks = "Sagar";
+
+            Console.WriteLine(p1.a);
+            Console.WriteLine(p1.ks);
+
+            Program p2 = new Program();
+            p2.a = 45;
+            p2.ks = "Hello";
+            Console.WriteLine(p2.ks);
+            Console.WriteLine(p2.a);
+
+            Console.ReadLine();
+        }
+    }
+}
