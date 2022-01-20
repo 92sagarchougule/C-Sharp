@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication3
+{
+    class Program
+    {
+
+        public void func(int value1, ref int value2)    // Function or Method
+        {
+
+            value2 = value2 + 10;
+            //Console.WriteLine("Value to be print" + sum);
+
+        }
+        static void Main(string[] args)
+        {
+            int value1 = 10;
+            int value2 = 39;
+
+            Program p1 = new Program();
+
+            p1.func(value1, ref value2);
+
+            Console.WriteLine("Addition value is:" + value2);
+
+            Console.ReadLine();
+        }
+    }
+}
