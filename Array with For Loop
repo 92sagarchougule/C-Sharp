@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Array
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] esat = new string [5];
+            esat[0] = "Gangu";
+            esat[1] = "Mamta";
+            esat[2] = "Sagar";
+            esat[3] = "Values";
+            esat[4] = "Mohmad";
+
+            for(int i=0; i<=4; i++)
+            {
+                Console.WriteLine(esat[i]);
+            }
+            Console.ReadLine();
+        }
+    }
+}
