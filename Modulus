@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 1000;
+            int b = 2;
+
+            int ans = a % b;
+            Console.WriteLine("The answer of Modulus is :" + ans);
+
+            Console.Read();
+        }
+    }
+}
