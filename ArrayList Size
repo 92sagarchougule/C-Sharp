@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;  // Namespace for Arraylist 
+
+namespace ArrayListProject
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ArrayList lst = new ArrayList();  // Array Creation
+
+            lst.Add("Hello");
+            lst.Add("Take essy");
+            lst.Add(20);
+            lst.Add("Want to Developer");
+            lst.Add(true);
+            lst.Add(38.3);
+            lst.Add("Hello");
+            lst.Add("Take essy");
+            lst.Add(20);
+            lst.Add("Want to Developer");
+            lst.Add(true);
+            lst.Add(38.3);
+
+            Console.WriteLine(lst.Capacity);
+            Console.Read();
+        }
+    }
+}
