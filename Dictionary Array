@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;
+
+namespace ListStringArrayProject
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> test = new List<string>();
+
+            
+
+            test.Add("shantabai");
+
+            Console.WriteLine(test);
+
+
+            Dictionary<string, string> name = new Dictionary<string, string>();
+
+            name.Add("Name", "Sagar");
+
+            foreach(string key in name.Keys)
+            {
+                Console.WriteLine(name[key]);
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
