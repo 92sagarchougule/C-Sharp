@@ -1,0 +1,86 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;
+
+namespace hashtableProject
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            #region
+            //Hashtable prj = new Hashtable();
+
+            //Console.WriteLine("Add Name");
+            //prj.Add("Add Name : ", Console.ReadLine());
+
+            //Console.WriteLine("Address");
+            //prj.Add("Address : ", Console.ReadLine());
+
+            //Console.WriteLine("City");
+            //prj.Add("City : ", Console.ReadLine());
+
+            //Console.WriteLine("State");
+            //prj.Add("State : ", Console.ReadLine());
+
+            //Console.WriteLine("Country");
+            //prj.Add("Country : ", Console.ReadLine());
+
+
+
+            //foreach (var name in prj.Keys)
+            //{
+            //    Console.WriteLine(name + "-" + prj[name]);
+            //}
+
+
+
+            //Console.WriteLine(prj["City : "]);  // Return a key value using key
+
+
+
+            //Console.ReadLine();
+
+            #endregion
+
+            Hashtable prj = new Hashtable();
+
+            Console.WriteLine("Add Name");
+            prj.Add("Add Name : ", Console.ReadLine());
+
+            Console.WriteLine("Address");
+            prj.Add("Address : ", Console.ReadLine());
+
+            Console.WriteLine("City");
+            prj.Add("City : ", Console.ReadLine());
+
+            Console.WriteLine("State");
+            prj.Add("State : ", Console.ReadLine());
+
+            Console.WriteLine("Country");
+            prj.Add("Country : ", Console.ReadLine());
+
+
+
+            foreach(var name in prj.Keys)
+            {
+                Console.WriteLine(name +"-" + prj[name]);
+            }
+
+
+
+            Console.WriteLine(prj["City : "]);  // Return a key value using key
+
+            
+
+            Console.ReadLine();
+            
+        }
+      
+
+        
+    }
+}
