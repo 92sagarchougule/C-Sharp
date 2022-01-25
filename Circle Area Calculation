@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("\n\n\n\n\t\tEnter a radius of Circle: ");
+            string radius = Console.ReadLine();
+
+            double radius1 = Convert.ToDouble(radius);
+
+            double area = 3.14 * radius1 * radius1;
+
+            Console.WriteLine("The Area of Circle is:" + area);
+
+            Console.Read();
+
+
+        }
+    }
+}
