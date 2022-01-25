@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GetUserFullName
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("\n\n\n\n\t\t\tEnter Your First Name : ");
+
+            string fname = Console.ReadLine();
+
+
+            Console.WriteLine("\n\n\n\n\t\t\tEnter Your Last Name : ");
+            string lname = Console.ReadLine();
+
+            Console.WriteLine("\n\n\n\t\t\t The User Name is: " + fname + " " +lname);
+
+            Console.Read();
+
+        }
+    }
+}
