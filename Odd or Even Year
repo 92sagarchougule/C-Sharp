@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EvenOr_OddYear
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.Write("Add Year : ");
+            string year = Console.ReadLine();
+
+            double temp = Convert.ToDouble(year);
+
+            double ans = temp % 2;
+
+            
+
+            if (ans == 1)
+            {
+                Console.WriteLine("This is Odd Year:", year);
+            }
+            else
+            {
+                Console.WriteLine("This is Even Year:", year);
+            }
+
+            Console.Read();
+            Console.Read();
+        }
+    }
+}
