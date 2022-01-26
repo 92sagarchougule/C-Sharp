@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MarkRanking
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("\n\n\n\t\t Enter A Number : ");
+
+            string Mark = Console.ReadLine();
+
+            double mark = Convert.ToDouble(Mark);
+
+            if(mark >= 60)
+            {
+                Console.WriteLine("\n\n\n\t\t\tYou Got Division : " + mark); 
+            }
+
+            else if(mark <60 && mark >50)
+            {
+                Console.WriteLine("\n\n\n\t\t\tYou Got B+" + mark);
+            }
+
+            else if(mark <50 && mark >40)
+            {
+                Console.WriteLine("\n\n\n\t\t\tYou got B" + mark);
+            }
+
+            else
+            {
+                Console.WriteLine("\n\n\n\t\t\t You are Fail :"+mark);
+            }
+
+            Console.Read();
+        }
+    }
+}
