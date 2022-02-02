@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Break
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("This is Sagar");
+            Console.WriteLine("This is Sagar");
+            Console.WriteLine("This is Sagar");
+            Console.WriteLine("This is Sagar");
+            Console.WriteLine("Enter New name : ");
+            string a = Console.ReadLine();
+
+            Console.WriteLine("a name is :  "+ a);
+
+            Console.WriteLine("Enter a Age : ");
+            string age = Console.ReadLine();
+
+            int Age = Convert.ToInt16(age);
+
+            Console.WriteLine("The age is :" + Age);
+
+            Console.Read();
+        }
+    }
+}
