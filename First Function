@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FunProject
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Get user input length
+            Console.WriteLine("Enter Length of Rectangle : ");
+            double length = Convert.ToDouble(Console.ReadLine());
+
+            //Get user input width
+
+            Console.WriteLine("Enter Width of Rectangle : ");
+            double width = Convert.ToDouble(Console.ReadLine());
+
+            FunToday(length, width);
+
+            
+        }
+        //Function
+        public static void FunToday(double Len, double Wid)
+        {
+            double fan = Len * Wid;
+            Console.WriteLine(fan);
+        }
+
+    }
+}
+
