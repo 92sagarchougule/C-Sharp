@@ -1,0 +1,58 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SecFunction
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Length of Triangle : ");
+            double Length = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter Width of Triangle : ");
+            double Width = Convert.ToDouble(Console.ReadLine());
+
+            Fuske(Width);
+            FuncSecond(Length, Width);
+            FunThree(Length);
+            Fuske(Length, Width);
+            
+            
+        }
+
+        public static void FuncSecond(double Len, double Wid)
+        {
+            double area = 1 / 2 * Len * Wid;
+            double Perimeter = Len * Wid;
+            Console.WriteLine("Area of Triangle is : " + area);
+            Console.WriteLine("Perimeter of Triangle is: " + Perimeter);
+
+            
+        }
+
+        public static void FunThree(double lest)
+        {
+            Console.WriteLine("The output files is the : " + lest);
+        }
+        
+        public static double Fuske(double Jump)
+        {
+            Console.WriteLine("Danki chiki " + Jump);
+            return Jump;
+        }
+
+        public static double Fuske(double take, double team)
+        {
+            Console.WriteLine("This is Function overwriding");
+            return take;
+
+            Console.ReadLine();
+        }
+
+        
+    }
+}
