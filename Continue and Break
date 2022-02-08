@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ContinueProject
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double Value;
+            for (Value = 1; Value < 1000; Value++)
+            {
+                if(Value == 10)
+                {
+                    Console.WriteLine("This is the 10 value here : ");
+                    continue;
+                }
+                if (Value == 20)
+                {
+                    Console.WriteLine("This is the 20 value here : ");
+                }
+                if (Value == 30)
+                {
+                    Console.WriteLine("This is the 30 value here : ");
+                }
+                if (Value == 30)
+                {
+                    Console.WriteLine("This is the 30 value here : ");
+                }
+                if (Value == 40)
+                {
+                    Console.WriteLine("This is the 40 value here : ");
+                    continue;
+                }
+                if (Value == 50)
+                {
+                    Console.WriteLine("This is the 50 value here : ");
+                    break;
+                }
+                if (Value == 60)
+                {
+                    Console.WriteLine("This is the 60 value here : ");
+                }
+            }
+            Console.Read();
+        }
+    }
+}
