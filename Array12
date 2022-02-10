@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ArrayProject12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] student = new string[5];   // Array Diclaration in c#
+
+            student[0] = "Sagar";
+            student[1] = "Sangam";
+            student[2] = "Jayashri";
+            student[3] = "Manoj";
+            student[4] = "Rajashri";
+
+            for (int i=0; i<student.Length; i++)
+            {
+                Console.WriteLine("Array data : " + student[i]);
+            }
+
+            Console.Read();
+        }
+    }
+}
