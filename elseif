@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ifElseProjets
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Number : ");
+            double num = Convert.ToDouble(Console.ReadLine());
+
+            if(num >= 100)
+            {
+                Console.Write("The value is Greater than 100 ");
+            }
+
+            else if(num <100 && num >=50)
+            {
+                Console.Write("The value is Less than 100 and Greater than 50 ");
+            }
+
+            else if (num < 50 && num >= 20)
+            {
+                Console.Write("The value is Less than 50 and Greater than 20 ");
+            }
+
+            else if (num < 20 && num >= 0)
+            {
+                Console.Write("The value is Less than 20 and Greater than 0 ");
+            }
+
+            else
+            {
+                Console.Write("Entered Value is wring ");
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
