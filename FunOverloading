@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication10
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            double a1 = GetArea(10);
+            double a2 = GetArea(20, 23);
+
+            Console.WriteLine();
+            Console.Read();
+        }
+
+        public static double GetArea(double length, double width)   // function GetArea
+        {
+            double area = length * width;
+            return area;
+        }
+
+        public static double GetArea(int redius)  // Function overload
+        {
+            double area = Math.PI * redius * redius;
+            return area;
+
+            
+        }
+       
+    }
+}
