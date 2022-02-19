@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ApplicationForm
+{
+    public partial class KSRDPR : Form
+    {
+        public KSRDPR()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string st = fname.Text;
+            string tst = lName.Text;
+            string mno = mNum.Text;
+            string jump = "Name :" + st + "\n" + "Mobile no : " + mno + "\n" + "Last name : " + tst;
+            MessageBox.Show(jump);
+        }
+    }
+}
