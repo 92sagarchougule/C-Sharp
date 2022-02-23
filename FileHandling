@@ -1,0 +1,58 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.IO;
+
+namespace calculationform
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+            double mar = Convert.ToDouble(txtMarathi.Text);
+            double Eng = Convert.ToDouble(txtEnglish.Text);
+            double Hin = Convert.ToDouble(txtHindi.Text);
+            double His = Convert.ToDouble(txtHistory.Text);
+            double Scie = Convert.ToDouble(txtScience.Text);
+            double Geo = Convert.ToDouble(txtGeography.Text);
+            double Geoinfo = Convert.ToDouble(txtGeoinformatics.Text);
+
+            double sum = mar + Eng + Hin + Scie + Geo + Geoinfo + His;
+
+            txtTotal.Text = Convert.ToString(sum);
+
+            double percent = sum / 7;
+
+            txtPercent.Text = Convert.ToString(percent);
+
+            StreamWriter fread = new StreamWriter(@"D:\ArcObjects\ArcObject Data\xyfile.txt");
+            fread.Write("Marathi Sub Marks :" + Convert.ToString(mar));
+            fread.Write("\nHindi Sub Marks :" + Convert.ToString(Eng));
+            fread.Write("\nEnglish Sub Marks :" + Convert.ToString(Hin));
+            fread.Write("\nScience Sub Marks :" + Convert.ToString(Scie));
+            fread.Write("\nGeography Sub Marks :" + Convert.ToString(Geo));
+            fread.Write("\nGeoinformatics Sub Marks :" + Convert.ToString(Geoinfo));
+
+            fread.Close();
+            fread.Dispose();
+            
+
+        }
+
+        private void btnfileSave_Click(object sender, EventArgs e)
+        {
+            
+        }
+    }
+}
