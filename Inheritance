@@ -1,0 +1,95 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.IO;
+
+namespace WindowsFormsApplication2
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void FileRead_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                StreamWriter str = new StreamWriter(@"D:\TmpGIS\Files.txt");
+                str.Write("\n\tSagar Chougule");
+                str.Write("\n\tHello There");
+                str.Write("\n\tJum to Work");
+
+                for (int i = 0; i >= 50; i++)
+                {
+                    str.Write("Number : " + i);
+                }
+
+                MessageBox.Show("File Successfully Write : ");
+
+                str.Close();
+                str.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);  // if code is wrong it will give message
+            }
+            finally
+            {
+                MessageBox.Show("Lastly file is written :");  // finally will read code at any condition
+            }
+
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            BasicAccount b1 = new BasicAccount();   //Object Creation 
+
+            FDAcount F1 = new FDAcount();
+            
+            
+
+        }
+    }
+
+    public class student     // Base Class   , Parent Class
+    {
+        public string name;
+        public string address;
+        public string mobileNo;
+    }
+
+    public class FDAcount:student   // Derived Class, Child Class
+    {
+       
+        public string rDaccountNo;
+        public void GetAccountFDNo()
+        {
+            MessageBox.Show("Number is 101 :");
+        }
+    }
+
+    public class BasicAccount
+    {
+        public string id;
+        public string name;
+        public string mnumber;
+    }
+
+    public class RDAcount
+    {
+       
+        public string rDaccountNo;
+        public void GetAccountRDNo()
+        {
+            MessageBox.Show("Number is 101 :");
+        }
+    }
+}
